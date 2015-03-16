@@ -3,18 +3,21 @@ komoran-2.0
 
 Korean morphological analyzer by shineware
 <br><br>
-현재 komoran 2.0과 관련된 문서들을 정리 중에 있습니다. 조만간 재정비하겠습니다. <br>
-더불어 komoran 2.0 동작 및 구현 방식과 관련된 논문을 작성 중에 있습니다. 이 역시 조만간 업데이트 하도록 하겠습니다.<br>
-그리고 마지막으로 <b>소스가 많이 더럽습니다......</b>
+�꾩옱 komoran 2.0怨�愿�젴��臾몄꽌�ㅼ쓣 �뺣━ 以묒뿉 �덉뒿�덈떎. 議곕쭔媛��ъ젙鍮꾪븯寃좎뒿�덈떎. <br>
+�붾텋��komoran 2.0 �숈옉 諛�援ы쁽 諛⑹떇怨�愿�젴���쇰Ц���묒꽦 以묒뿉 �덉뒿�덈떎. ����떆 議곕쭔媛��낅뜲�댄듃 �섎룄濡��섍쿋�듬땲��<br>
+洹몃━怨�留덉�留됱쑝濡�<b>�뚯뒪媛�留롮씠 �붾읇�듬땲��.....</b>
 <br><br>
 
-komoran 2.0을 실행하기 위해서는 아래와 같은 라이브러리가 필요합니다. <br>
+komoran 2.0���ㅽ뻾�섍린 �꾪빐�쒕뒗 �꾨옒��媛숈� �쇱씠釉뚮윭由ш� �꾩슂�⑸땲�� <br>
 shineware-common-2.0.jar (<a href=http://shineware.tistory.com/attachment/cfile9.uf@2752823C542945A30BE87B.jar>download</a>)<br>
 shineware-ds-1.0.jar (<a href=http://shineware.tistory.com/attachment/cfile10.uf@22510A3C542945AB0DF2ED.jar>download</a>)<br>
 <br><br>
-자세한 사용법은 아래 링크에서 확인하실 수 있습니다.<br>
-블로그 : http://shineware.tistory.com/entry/KOMORAN-ver-24
+�먯꽭���ъ슜踰뺤� �꾨옒 留곹겕�먯꽌 �뺤씤�섏떎 ���덉뒿�덈떎.<br>
+釉붾줈洹�: http://shineware.tistory.com/entry/KOMORAN-ver-24
 <br><br>
-데모는 아래 링크에서 확인하실 수 있습니다.<br>
-사이트 : http://www.shineware.co.kr
+�곕え���꾨옒 留곹겕�먯꽌 �뺤씤�섏떎 ���덉뒿�덈떎.<br>
+�ъ씠��: http://www.shineware.co.kr
 <br><br>
+
+---------------------------------------------------------------------------------
+maven 빌드 가능하도록 프로젝트 구조 변경 및 클래스 리팩토링중......
