@@ -1,6 +1,7 @@
 package kr.co.shineware.nlp.komoran.core.analyzer;
 
 import java.util.List;
+
 import static org.junit.Assert.*;
 import kr.co.shineware.nlp.komoran.modeler.builder.ModelBuilder;
 import kr.co.shineware.util.common.model.Pair;
@@ -8,6 +9,7 @@ import kr.co.shineware.nlp.komoran.core.analyzer.Komoran;
 
 import org.junit.Test;
 
+@SuppressWarnings("unused")
 public class KomoranTest {
 
 	@Test
