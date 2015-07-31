@@ -1,6 +1,5 @@
-
-/.classpath
-/.springBeans
-/.project
-/target/
-/.settings 
+target/
+.idea
+.iml
+lib/**/*.jar
+kr
