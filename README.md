@@ -46,6 +46,7 @@ maven 프로젝트로 재구성함 리펙토링중......무단으로 해도 되�
 # License
 
 * blog posting of @shineware: http://shineware.tistory.com/entry/KOMORAN-2x-%EB%9D%BC%EC%9D%B4%EC%84%BC%EC%8A%A4-%EB%B3%80%EA%B2%BD-%EA%B3%B5%EC%A7%80
+
 > 자바 형태소 분석기 KOMORAN-2.0을 Apache License 2.0으로 공개합니다.
 > 개발실력이 미천하여 이번에도 부끄러운 마음을 갖고 공개하였습니다. 
 > 많은 채찍질과 도움으로 자연어처리 비전공자분들도 다양하게 활용할 수 있기를 희망합니다. 
