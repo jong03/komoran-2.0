@@ -1,49 +1,49 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.shineware</groupId>
-  <artifactId>komoran</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <properties>
-	<maven.test.skip>true</maven.test.skip>
-  	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <org.slf4j.version>1.7.5</org.slf4j.version>
-    <java.version>1.8</java.version>
-  </properties>
-  	<dependencies>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.shineware</groupId>
+    <artifactId>komoran</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <properties>
+        <maven.test.skip>true</maven.test.skip>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <org.slf4j.version>1.7.5</org.slf4j.version>
+        <java.version>1.8</java.version>
+    </properties>
+    <dependencies>
         <dependency>
-	  		<groupId>org.apache.lucene</groupId>
-	  		<artifactId>lucene-core</artifactId>
-	  		<version>4.10.2</version>
-	  	</dependency>
-	  	<dependency>
-	  		<groupId>org.apache.lucene</groupId>
-	  		<artifactId>lucene-analyzers-common</artifactId>
-	  		<version>4.10.2</version>
-	  	</dependency>
-		<dependency>
-		  <groupId>com.shineware</groupId>
-		  <artifactId>shineware-common</artifactId>
-		  <version>2.0</version>
-		</dependency>
-		<dependency>
-		  <groupId>com.shineware</groupId>
-		  <artifactId>shineware-ds</artifactId>
-		  <version>1.0</version>
-		</dependency>	
-		<dependency>
-			<groupId>commons-io</groupId>
-			<artifactId>commons-io</artifactId>
-			<version>2.0.1</version>
-		</dependency>
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.8.1</version>
-			<scope>test</scope>
-		</dependency>
-		<!-- Log - slf4j -->
-		<dependency>
+            <groupId>org.apache.lucene</groupId>
+            <artifactId>lucene-core</artifactId>
+            <version>4.10.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.lucene</groupId>
+            <artifactId>lucene-analyzers-common</artifactId>
+            <version>4.10.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.shineware</groupId>
+            <artifactId>shineware-common</artifactId>
+            <version>2.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.shineware</groupId>
+            <artifactId>shineware-ds</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.8.1</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- Log - slf4j -->
+        <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
             <version>1.1.2</version>
@@ -78,11 +78,11 @@
                 </exclusion>
             </exclusions>
         </dependency>
-		
-	</dependencies>
-	<build>
-		<finalName>komoran</finalName>
-		<directory>${project.basedir}/target</directory>
+
+    </dependencies>
+    <build>
+        <finalName>komoran</finalName>
+        <directory>${project.basedir}/target</directory>
         <sourceDirectory>${project.basedir}/src/main/java</sourceDirectory>
         <outputDirectory>${project.build.directory}/classes</outputDirectory>
         <resources>
@@ -97,24 +97,24 @@
                 <directory>${project.basedir}/src/test/resources</directory>
             </testResource>
         </testResources>
-		<plugins>
-	    	<plugin>
-			    <artifactId>maven-clean-plugin</artifactId>
-			     <version>2.5</version>
-			      <configuration>
-			        <failOnError>false</failOnError>
-			        <excludeDefaultDirectories>true</excludeDefaultDirectories>
-			        <filesets>
-			            <fileset>
-			                <directory>target</directory>
-			                <includes>
-			                    <include>**/*</include>
-			                </includes>
-			            </fileset>
-			        </filesets>
-			    </configuration>
-			</plugin>
-			<plugin>
+        <plugins>
+            <plugin>
+                <artifactId>maven-clean-plugin</artifactId>
+                <version>2.5</version>
+                <configuration>
+                    <failOnError>false</failOnError>
+                    <excludeDefaultDirectories>true</excludeDefaultDirectories>
+                    <filesets>
+                        <fileset>
+                            <directory>target</directory>
+                            <includes>
+                                <include>**/*</include>
+                            </includes>
+                        </fileset>
+                    </filesets>
+                </configuration>
+            </plugin>
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.1</version>
@@ -125,12 +125,12 @@
                     <compilerArgument>-Xlint:unchecked</compilerArgument>
                 </configuration>
             </plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-eclipse-plugin</artifactId>
                 <version>2.9</version>
                 <configuration>
-                	<ajdtVersion>none</ajdtVersion>
+                    <ajdtVersion>none</ajdtVersion>
                     <additionalProjectnatures>
                         <projectnature>org.springframework.ide.eclipse.core.springnature</projectnature>
                     </additionalProjectnatures>
@@ -141,17 +141,31 @@
                     <downloadJavadocs>false</downloadJavadocs>
                 </configuration>
             </plugin>
-			
-			<plugin>  
-		        <groupId>org.apache.maven.plugins</groupId>  
-		        <artifactId>maven-assembly-plugin</artifactId>  
-		        <version>2.5.3</version>  
-		        <configuration>  
-		          <descriptorRefs>  
-		            <descriptorRef>jar-with-dependencies</descriptorRef>  
-		          </descriptorRefs>  
-		        </configuration>  
-		      </plugin>
-		</plugins>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>2.5.3</version>
+                <configuration>
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+                </configuration>
+            </plugin>
+        </plugins>
     </build>
+
+    <repositories>
+        <repository>
+            <id>repo</id>
+            <releases>
+                <enabled>true</enabled>
+                <checksumPolicy>ignore</checksumPolicy>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <url>file://${project.basedir}/lib</url>
+        </repository>
+    </repositories>
 </project>
